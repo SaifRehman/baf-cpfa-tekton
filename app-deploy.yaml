@@ -1,6 +1,7 @@
 apiVersion: appsody.dev/v1beta1
 kind: AppsodyApplication
 metadata:
+  namespace: nodejs
   annotations:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
@@ -60,7 +61,6 @@ metadata:
     stack.appsody.dev/version: 0.2.10
   name: nodejs
 spec:
-  namespace: nodejs
   applicationImage: dev.local/nodejs
   createKnativeService: false
   expose: true
