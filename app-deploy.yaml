@@ -60,6 +60,7 @@ metadata:
     stack.appsody.dev/version: 0.2.10
   name: nodejs
 spec:
+  namespace: nodejs
   applicationImage: dev.local/nodejs
   createKnativeService: false
   expose: true
